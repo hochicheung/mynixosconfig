@@ -1,0 +1,13 @@
+/*
+
+!.gitignore
+
+!configuration.nix
+!nix-device-template.nix
+
+!home.nix
+
+!home-device-template.nix
+!/home-modules/
+!/system-modules/
+!/system-configs/

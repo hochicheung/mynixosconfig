@@ -1,11 +1,10 @@
 { pkgs, ...}:
 
 {
-	imports = [
-	  ./generic/pc.nix
-		./generic/laptop.nix
+  imports = [
+	  ./generic/server.nix
 		../system-modules/boot/uefi.nix
 
 		../system-modules/syncthing.nix
-	];
+  ];
 }

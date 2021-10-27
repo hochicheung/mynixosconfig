@@ -4,6 +4,7 @@
 	imports = [
 	  ../../system-modules/hardware/SSD.nix
 	  ../../system-modules/hardware/us-intl-layout.nix
+	  ../../system-modules/hardware/backlight.nix
 	];
 
 	services.tlp.enable = true;
