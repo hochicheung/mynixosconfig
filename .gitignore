@@ -10,4 +10,4 @@
 !home-device-template.nix
 !/home-modules/
 !/system-modules/
-!/system-configs/
+!/hw-configs/
