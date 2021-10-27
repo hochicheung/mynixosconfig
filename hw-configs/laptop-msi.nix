@@ -2,7 +2,6 @@
 
 {
 	imports = [
-	  ./generic/pc.nix
 		./generic/laptop.nix
 		../system-modules/boot/uefi.nix
 

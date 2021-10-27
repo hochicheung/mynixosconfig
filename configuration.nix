@@ -1,13 +1,13 @@
-{pkgs, stdenv, callPackage, ...}
+{pkgs, stdenv, callPackage, ...}:
 
 
-in {
+{
   system.stateVersion = "21.05";
 
-	imports = {
-	  ./nix-device.nix
+	imports = [
+	  ./device.nix
 		./hardware-configuration.nix
-	};
+	];
 	
 	nix = {
 		# Don't garbage collect nix-shell
@@ -35,7 +35,7 @@ in {
 	i18n.defaultLocale = "en_US.UTF-8";
 	i18n.extraLocaleSettings = { "TIME_STYLE" = "iso"; };
 
-	time.timeZone = "Europe/Stockholm"
+	time.timeZone = "Europe/Stockholm";
 
 	networking.networkmanager.enable = true;
 
