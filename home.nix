@@ -25,13 +25,11 @@
 	];
 
 	home.packages = with pkgs; [
-	  git
-
 		qutebrowser
 
 		pavucontrol
 
-		lm-sensors
+		lm_sensors
 
 		ripgrep
 
@@ -49,8 +47,6 @@
 		mupdf
 
 		cmake
-
-		discord
 
 		qbittorrent
 		
