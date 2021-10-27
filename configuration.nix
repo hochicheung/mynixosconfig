@@ -7,6 +7,7 @@
 	imports = [
 	  ./device.nix
 		./hardware-configuration.nix
+		./system-modules/network/dns.nix
 	];
 	
 	nix = {
