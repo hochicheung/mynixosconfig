@@ -31,9 +31,9 @@
       require_nolog = true;
       require_nofilter = true;
 
-      cloaking_rules = "/etc/nixos/nixos-private-config/dnscrypt-hosts.txt";
+      # cloaking_rules = "/etc/nixos/nixos-private-config/dnscrypt-hosts.txt";
 
-      server_names = (import ../../nixos-private-config/dns.nix).myDnsServers;
+      # server_names = (import ../../nixos-private-config/dns.nix).myDnsServers;
 
       sources.public-resolvers = {
         # https://github.com/DNSCrypt/dnscrypt-proxy/wiki/DNS-server-sources
