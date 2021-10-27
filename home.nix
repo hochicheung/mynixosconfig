@@ -14,11 +14,8 @@
 
 	imports = [
 	  ./home-device.nix
-		./home-modules/notifications.nix
+
 		./home-modules/git.nix
-		./home-modules/gpg.nix
-		./home-modules/visual.nix
-		./home-modules/audio.nix
 
 		./home-modules/cached-nix-shell.nix
 		./home-modules/direnv/direnv.nix
@@ -67,8 +64,6 @@
 
 		gcc
 
-		graphviz
-
 		gnumake
 
 		gnuplot
@@ -81,3 +76,4 @@
 		libvterm
 		libtool
 	];
+}
