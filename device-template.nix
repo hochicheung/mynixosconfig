@@ -21,7 +21,7 @@ users = {
 
 	users.root = {
 	  hashedPassword = pass;
-	}
+	};
 
 	mutableUsers = false;
 };
@@ -39,4 +39,4 @@ services.syncthing.relay = {
 	port = ;
 	statusPort = ;
 	networking.firewall.allowedTCPPorts = [];
-}
+};
