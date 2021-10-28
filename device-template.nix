@@ -1,3 +1,4 @@
+# Generate hashedpassword with ~mkpasswd -m sha-512~
 let
 	pass = null;
 in
