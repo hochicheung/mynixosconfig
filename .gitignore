@@ -5,6 +5,8 @@
 !configuration.nix
 !device-template.nix
 
+!myprivatenixosconfig
+
 !home.nix
 
 !home-device-template.nix
