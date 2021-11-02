@@ -9,9 +9,12 @@
 		../system-modules/hardware/SSD.nix
 
 		../system-modules/xorg/xorg.nix
+		../system-modules/hardware/input/input.nix
 
 		../system-modules/syncthing.nix
 		../system-modules/network/sshd.nix
 		../system-modules/network/sshd-xorg.nix
+
+		../myprivatenixosconfig/server.nix
   ];
 }
