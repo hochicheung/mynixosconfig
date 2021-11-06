@@ -10,7 +10,7 @@
           identitiesOnly = true;
           user = "hochicheung";
         };
-				"192.168.1.???" = {
+				"192.168.1.*" = {
           identityFile = "~/.ssh/id_nucserver";
           identitiesOnly = true;
           user = "samcheung";
