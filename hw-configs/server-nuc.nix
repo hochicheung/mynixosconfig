@@ -4,6 +4,7 @@
   imports = [
 		../hw-configs/generic/pc.nix
 		../myprivatenixosconfig/server.nix
+		../system-modules/agenix.nix
 
 		../system-modules/boot/uefi.nix
 		../system-modules/auto-upgrade-server.nix
