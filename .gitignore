@@ -8,7 +8,7 @@
 # include only some files in subdirectory
 !/device
 /device/*
-!/device/device-template.nix
-!/device/home-device-template.nix
+!/device/.device-template.nix
+!/device/.home-device-template.nix
 
 !/modules/
