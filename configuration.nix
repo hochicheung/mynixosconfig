@@ -5,9 +5,10 @@
   system.stateVersion = "21.05";
 
 	imports = [
-	  ./device/device.nix
 		./hardware-configuration.nix
-		./system-modules/network/dns.nix
+
+	  ./device/device.nix
+		./modules/system-modules/network/dns.nix
 	];
 	
 	nix = {

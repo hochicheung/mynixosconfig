@@ -3,8 +3,8 @@
 {
 	imports = [
 		./generic/laptop.nix
-		../system-modules/boot/uefi.nix
+		../modules/system-modules/boot/uefi.nix
 
-		../system-modules/syncthing.nix
+		../modules/system-modules/syncthing.nix
 	];
 }
