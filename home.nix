@@ -21,7 +21,7 @@
 		./modules/home-modules/direnv/direnv.nix
 		./modules/home-modules/direnv/nix-direnv.nix
 
-		./modules/home-modules/ssh.nix
+		./modules/myprivatenixosconfig/ssh.nix
 	];
 
 	home.packages = with pkgs; [
