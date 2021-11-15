@@ -5,7 +5,7 @@
   system.stateVersion = "21.05";
 
 	imports = [
-	  ./device.nix
+	  ./device/device.nix
 		./hardware-configuration.nix
 		./system-modules/network/dns.nix
 	];

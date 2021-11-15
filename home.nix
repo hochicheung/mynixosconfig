@@ -13,15 +13,15 @@
 	};
 
 	imports = [
-	  ./home-device.nix
+	  ./device/home-device.nix
 
-		./home-modules/git.nix
+		./modules/home-modules/git.nix
 
-		./home-modules/cached-nix-shell.nix
-		./home-modules/direnv/direnv.nix
-		./home-modules/direnv/nix-direnv.nix
+		./modules/home-modules/cached-nix-shell.nix
+		./modules/home-modules/direnv/direnv.nix
+		./modules/home-modules/direnv/nix-direnv.nix
 
-		./home-modules/ssh.nix
+		./modules/home-modules/ssh.nix
 	];
 
 	home.packages = with pkgs; [
