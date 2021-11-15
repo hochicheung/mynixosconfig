@@ -3,13 +3,9 @@
 !.gitignore
 
 !configuration.nix
-!device-template.nix
-
-!myprivatenixosconfig
-
 !home.nix
 
-!home-device-template.nix
-!/home-modules/
-!/system-modules/
-!/hw-configs/
+!/device/.device-template.nix
+!/device/.home-device-template.nix
+
+!/modules/
