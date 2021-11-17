@@ -12,4 +12,5 @@
 	# Only turn off screen on lid close
 	services.logind.lidSwitch = "ignore";
 	services.logind.lidSwitchDocked = "ignore";
+	services.logind.extraConfig = "HandlePowerKey=suspend";
 }
