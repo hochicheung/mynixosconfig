@@ -10,6 +10,7 @@
   
   services.logind.extraConfig = ''
     HandlePowerKey=suspend
+		HandlePowerKeyLongPress=poweroff
 
 		# When idle, suspend
     IdleAction=suspend
