@@ -13,8 +13,8 @@
 		HandlePowerKeyLongPress=poweroff
 
 		# When idle, suspend
-    IdleAction=suspend
-    IdleActionSec=60
+    IdleAction=ignore
+    # IdleActionSec=60
   '';
 
 	programs.xss-lock = {
