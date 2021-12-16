@@ -4,9 +4,10 @@ let
 in
 {
 	imports = [
-	  # ./system-configs/msi-laptop.nix
-
-		# ./system-modules/network/sshd.nix
+		# ../hw-configs/laptop-msi.nix
+ 
+		# ../modules/system-modules/network/sshd.nix
+		# ../modules/system-modules/network/sshd-xorg.nix
 	];
 
   networking.hostName = "nixos";
