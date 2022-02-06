@@ -19,7 +19,7 @@
 		'';
 	
 		# Ability to use custom channels in home-manager
-  	trustedUsers = [ "root" "samcheung" ];
+  	settings.trusted-users = [ "root" "samcheung" ];
 	};
 
 	nixpkgs.config = {
