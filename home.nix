@@ -1,16 +1,17 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
-	home.stateVersion = "20.09";
+	#home.stateVersion = "22.05";
 	home.username = "samcheung";
 	home.homeDirectory = "/home/samcheung";
 
 	programs.home-manager.enable = true;
+	#programs.home-manager.path = "https://github.com/rycee/home-manager/archive/master.tar.gz"
 
-	nixpkgs.config = {
+	#nixpkgs.config = {
 		# allowBroken = true;
 		# allowUnfree = false;
-	};
+	#};
 
 	imports = [
 	  ./device/home-device.nix
