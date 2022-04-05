@@ -34,12 +34,4 @@ in
 	    addr = "192.168.1.1"; port = 22;
     }
   ];
-  
-  # Syncthing
-  services.syncthing.relay = {
-    enable = true;
-	  port = ;
-	  statusPort = ;
-	  networking.firewall.allowedTCPPorts = [];
-  };
 }
