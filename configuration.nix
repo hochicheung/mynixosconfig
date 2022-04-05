@@ -8,7 +8,7 @@
 		./hardware-configuration.nix
 
 	  ./device/device.nix
-		./modules/system-modules/network/dns.nix
+		#./modules/system-modules/network/dns.nix
 	];
 	
 	nix = {
