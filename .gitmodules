@@ -1,6 +1,3 @@
 [submodule "modules/myprivatenixosconfig"]
 	path = modules/myprivatenixosconfig
 	url = git@github.com:hochicheung/myprivatenixosconfig
-[submodule "myprivatenixosconfig"]
-	path = modules/myprivatenixosconfig
-	url = git@github.com:hochicheung/myprivatenixosconfig
