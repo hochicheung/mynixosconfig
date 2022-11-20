@@ -7,8 +7,13 @@
     # ../modules/home-modules/art.nix
   ];
 
-  # home.packages = with pkgs; [
+	# nixpkgs.config.allowUnfree = false;
 
+  # home.packages = with pkgs; [
+  		# discord
+			# keepassxc
+			# qbittorrent
+			# mupdf
   # ];
 
 	programs.ssh = {

@@ -9,7 +9,7 @@
 	  ./device/device.nix
 		#./modules/system-modules/network/dns.nix
 	];
-	
+
 	nix = {
 		# Don't garbage collect nix-shell
 		extraOptions = ''
@@ -22,7 +22,7 @@
 	};
 
 	nixpkgs.config = {
-	  allowUnfree = false;
+	  allowUnfree = true;
 	};
 
 	boot = {
@@ -33,8 +33,8 @@
 		tmpOnTmpfs = true;
 	};
 
-	i18n.defaultLocale = "en_US.UTF-8";
-	i18n.extraLocaleSettings = { "TIME_STYLE" = "iso"; };
+	# i18n.defaultLocale = "en_US.UTF-8";
+	# i18n.extraLocaleSettings = { "TIME_STYLE" = "iso"; };
 
 	time.timeZone = "Europe/Stockholm";
 

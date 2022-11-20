@@ -2,8 +2,10 @@
 {
   programs.git = {
     enable = true;
+
+		userName = "Sam Cheung";
+		userEmail = "hochi.cheung.sam@gmail.com";
 		extraConfig = {
-		  user = { name = "Sam Cheung"; email = "hochi.cheung.sam@gmail.com"; };
 			submodule = { recurse = true; };
 		};
   };

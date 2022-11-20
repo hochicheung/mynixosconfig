@@ -27,11 +27,4 @@ in
   
 	  mutableUsers = false;
   };
-  
-  # SSH
-  services.openssh.listenAddresses = [
-    {
-	    addr = "192.168.1.1"; port = 22;
-    }
-  ];
 }
