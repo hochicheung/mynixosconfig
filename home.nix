@@ -23,6 +23,8 @@
 	home.packages = with pkgs; [
 		qutebrowser
 
+		keepassxc
+
 		pavucontrol
 
 		lm_sensors

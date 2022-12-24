@@ -5,13 +5,13 @@
     # ../modules/home-modules/games/cataclysm-dda/cataclysm-dda-git-latest.nix
     # ../modules/home-modules/emacs.nix
     # ../modules/home-modules/art.nix
+		# ../modules/home-modules/r.nix
   ];
 
 	# nixpkgs.config.allowUnfree = false;
 
   # home.packages = with pkgs; [
   		# discord
-			# keepassxc
 			# qbittorrent
 			# mupdf
   # ];
