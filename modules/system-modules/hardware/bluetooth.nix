@@ -1,5 +1,9 @@
 # https://nixos.wiki/wiki/Bluetooth
-{ config, ... }:
+{ config, pkgs, ... }:
 {
   hardware.bluetooth.enable = true;
+
+	environment.systemPackages = with pkgs; [
+	  bluez
+	];
 }
