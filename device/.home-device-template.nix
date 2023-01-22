@@ -6,6 +6,7 @@
     # ../modules/home-modules/emacs.nix
     # ../modules/home-modules/art.nix
 		# ../modules/home-modules/r.nix
+		# ../modules/myprivatenixosconfig/home-modules/mailaccount.nix
   ];
 
 	# nixpkgs.config.allowUnfree = false;
