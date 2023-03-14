@@ -18,7 +18,7 @@ in
 		  isNormalUser = true;
 		  uid = 1000;
 		  hashedPassword = pass;
-		  extraGroups = [ "wheel" "networkmanager" "video"];
+		  extraGroups = [ "wheel" "video"];
 	  };
   
 	  users.root = {

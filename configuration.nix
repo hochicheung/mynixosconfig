@@ -38,8 +38,6 @@
 
 	time.timeZone = "Europe/Stockholm";
 
-	networking.networkmanager.enable = true;
-
 	services.emacs.defaultEditor = true;
 
 	environment.systemPackages = with pkgs; [
