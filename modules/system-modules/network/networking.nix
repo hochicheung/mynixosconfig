@@ -2,11 +2,19 @@
 	networking.wireless.enable = true;
 	networking.wireless.userControlled.enable = true;
 
-	# networking.wireless.environmentFile = "/etc/nixos/modules/myprivatenixosconfig/secrets/wireless.env";
-	# networking.wireless.networks = {
-	  # hotspot.psk = ''
-		  # password = "@PERS_HOTSPOT@";
-			# priority = 0;
-		# '';
-	# };
+	networking.wireless.environmentFile = "/etc/nixos/modules/myprivatenixosconfig/secrets/wireless.env";
+
+	networking.wireless.networks = {
+		"SamC-Network".psk = "@PERS_HOTSPOT@";
+		"SamC-Network".priority = 2;
+
+		"eduroam".auth = ''
+		  key_mgmt=WPA-EAP
+			eap=PEAP
+			identity="samch@kth.se"
+			password="@KTH_EDUROAM@"
+			phase2="auth=MSCHAPV2"
+		'';
+		"eduroam".priority = 1;
+	};
 }
