@@ -2,8 +2,11 @@
 {
 	fonts.fonts = with pkgs; [
 		# (import ./scientifica.nix)
+		mplus-outline-fonts.githubRelease
+
+		iosevka
 		
-		ultimate-oldschool-pc-font-pack
+		# ultimate-oldschool-pc-font-pack
 
 	  dejavu_fonts
 		
