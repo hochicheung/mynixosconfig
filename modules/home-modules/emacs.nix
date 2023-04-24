@@ -12,7 +12,6 @@
 			aspellDicts.sv
 			aspellDicts.en
 		  graphviz
-		  sqlite
 		  imagemagick
 		  libvterm
 		  libtool
