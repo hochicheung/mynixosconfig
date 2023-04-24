@@ -10,6 +10,8 @@
 		../modules/system-modules/hardware/battery/tlp/tlp-processors.nix
 		../modules/system-modules/hardware/battery/tlp/tlp-thinkpad.nix
 
+		../modules/system-modules/hardware/input/disable-touchpad.nix
+
 		../modules/system-modules/syncthing.nix
 	];
 }
