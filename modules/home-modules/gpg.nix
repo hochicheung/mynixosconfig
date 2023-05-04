@@ -6,11 +6,15 @@
 
     # Not required anymore
     extraConfig = "allow-emacs-pinentry
-                   allow-loopback-pinentry";
+									allow-loopback-pinentry";
 
     # pinentry-program /run/current-system/sw/bin/pinentry-emacs
     # grabKeyboardAndMouse = false;
   };
+
+	home.packages = with pkgs; [
+								pinentry
+	];
 
   programs.gpg = {
     enable = true;
