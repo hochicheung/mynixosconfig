@@ -2,7 +2,7 @@
 
 
 {
-  system.stateVersion = "21.05";
+  system.stateVersion = "23.05";
 	imports = [
 		./hardware-configuration.nix
 
@@ -25,12 +25,12 @@
 	  allowUnfree = true;
 	};
 
-	boot = {
+	boot.tmp = {
 	  # clean /tmp on boot
-	  cleanTmpDir = true;
+	  useTmpfs = true;
 
 		# make /tmp be in ram
-		tmpOnTmpfs = true;
+		cleanOnBoot = true;
 	};
 
 	# i18n.defaultLocale = "en_US.UTF-8";
