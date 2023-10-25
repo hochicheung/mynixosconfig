@@ -4,10 +4,12 @@ let
 in
 {
 	imports = [
-		# ../hw-configs/laptop-msi.nix
+		 ../hw-configs/laptop-tp250.nix
  
-		# ../modules/system-modules/network/sshd.nix
-		# ../modules/system-modules/network/sshd-xorg.nix
+		 ../modules/system-modules/network/sshd.nix
+		 ../modules/system-modules/network/sshd-xorg.nix
+		 ../modules/system-modules/hardware/printer.nix
+		 ../modules/system-modules/virtualisation/virtualbox.nix
 	];
 
   networking.hostName = "nixos";
