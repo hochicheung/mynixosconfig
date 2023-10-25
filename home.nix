@@ -16,8 +16,6 @@
 		./modules/home-modules/cached-nix-shell.nix
 		./modules/home-modules/direnv/direnv.nix
 		./modules/home-modules/direnv/nix-direnv.nix
-
-		# ./modules/myprivatenixosconfig/ssh.nix
 	];
 
 	home.packages = with pkgs; [
@@ -49,6 +47,7 @@
 		recoll
 
 		gcc
+                libgccjit
 
 		gnumake
 
