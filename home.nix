@@ -46,11 +46,10 @@
 
 		recoll
 
-		gcc
-                libgccjit
-
 		gnumake
 
 		gnuplot
+
+		vim
 	];
 }

@@ -34,6 +34,8 @@ in
     }))
 
     #emacsPackage
+    gcc
+    libgccjit
 
     exec-path-from-shell
     vterm

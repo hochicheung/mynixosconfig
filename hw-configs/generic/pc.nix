@@ -3,6 +3,8 @@
 	boot.loader.timeout = 1;
 
 	imports = [
+	  ../../modules/system-modules/hardware/SSD.nix
+
 	  ../../modules/system-modules/xorg/xorg.nix
 
 	  ../../modules/system-modules/audio/pulse.nix
