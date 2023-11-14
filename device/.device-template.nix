@@ -10,6 +10,8 @@ in
 		 ../modules/system-modules/network/sshd-xorg.nix
 		 ../modules/system-modules/hardware/printer.nix
 		 ../modules/system-modules/virtualisation/virtualbox.nix
+
+		 # ../modules/system-modules/boot/osprober.nix
 	];
 
   networking.hostName = "nixos";
