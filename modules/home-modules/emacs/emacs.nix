@@ -19,10 +19,8 @@ let
 in
 {
 
-  # Specify emacs-version
   imports = [ ./pkgs.nix ];
   home.packages = with new-pkgs; with new-pkgs.emacsPackages; [
-    #emacsPackage
     gcc
     libgccjit
 
@@ -57,6 +55,20 @@ in
 		helm
 		olivetti
 		magit
+		evil
+		org
+		undo-tree
+		evil-surround
+		spacemacs-theme
+		vertico
+		orderless
+		ivy
+		counsel
+		swiper
+		ivy-rich
+		hydra
+		su
+		envrc
   ];
 }
 
