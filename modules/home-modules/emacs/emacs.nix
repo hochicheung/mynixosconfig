@@ -47,6 +47,16 @@ in
     gnuplot
     rainbow-delimiters
     aggressive-indent
+		org-bullets
+		company
+		yasnippet
+		hide-mode-line
+		outshine
+		which-key
+		avy
+		helm
+		olivetti
+		magit
   ];
 }
 
