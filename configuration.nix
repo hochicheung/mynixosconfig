@@ -11,27 +11,39 @@
 	];
 
 	nix = {
+		settings = {
 		# Don't garbage collect nix-shell
-		extraOptions = ''
-		keep-outputs = true
-		keep-derivations = true
-		'';
+		# extraOptions = ''
+		# keep-outputs = true
+		# keep-derivations = true
+		# '';
 	
 		# Ability to use custom channels in home-manager
-  	settings.trusted-users = [ "root" "samcheung" ];
+  	trusted-users = [ "root" "samcheung" ];
+
+    experimental-features = [ "nix-command" "flakes" ];
+		};
 	};
 
 	nixpkgs.config = {
 	  allowUnfree = true;
 	};
 
-	boot.tmp = {
-	  # clean /tmp on boot
-	  useTmpfs = true;
+  boot.tmp = {
+    # Clean /tmp on boot
+    cleanOnBoot = true;
+    # Make /tmp be in ram
+    useTmpfs = true;
+    tmpfsSize = "95%";
+  };
 
-		# make /tmp be in ram
-		cleanOnBoot = true;
-	};
+  zramSwap = {
+    enable = true;
+    memoryPercent = 50;
+  };
+
+  nix.settings.max-jobs = 1;
+  nix.settings.cores = 1;
 
 	# i18n.defaultLocale = "en_US.UTF-8";
 	# i18n.extraLocaleSettings = { "TIME_STYLE" = "iso"; };
