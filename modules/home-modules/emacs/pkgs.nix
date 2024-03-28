@@ -14,9 +14,9 @@
         sha256 = "1lh36b86s0jmqvp363cw9z8zpx6qqn9hpni95q34qi9a41f36rwf";
         rev = "59ff8976ce789c0c594fd4756cbeb5354b6178d2";
       };
-
       packageRequires = with emacsPackages; [ s dash ];
     })
+<<<<<<< HEAD
     (emacsPackages.trivialBuild {
       pname = "rainbow-delimiters";
       version = "unstable-2023-08-30";
@@ -27,6 +27,19 @@
         sha256 = "10ky6b7vy1w7iyn7qsqd1gswy8gdjc69zs0s71nr7swb9xdm3hr5";
         rev = "f40ece58df8b2f0fb6c8576b527755a552a5e763";
       };
+=======
+
+    (emacsPackages.trivialBuild {
+      pname = "anki-editor";
+      version = "unstable-2023-04-13";
+
+      src = fetchFromGitHub {
+        owner = "orgtre";
+        repo = "anki-editor";
+        sha256 = "0p2v7cdcpb6v3z09qm42mxbcs4mzcsqkwgvrp58ww2895pii048r";
+        rev = "ab7b33b48c78cb909391622eeffb893829b382d7";
+       };
+>>>>>>> origin/master
     })
   ];
 }

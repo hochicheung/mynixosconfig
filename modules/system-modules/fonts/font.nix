@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-	fonts.fonts = with pkgs; [
+	fonts.packages = with pkgs; [
 		# (import ./scientifica.nix)
 		mplus-outline-fonts.githubRelease
 
