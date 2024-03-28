@@ -60,7 +60,6 @@ in
     projectile
     emacsql
     emacsql-sqlite
-<<<<<<< HEAD
     org-roam
     org-roam-bibtex
     ebib
@@ -70,40 +69,6 @@ in
     org-roam-ui
     deft
     anki-editor
-=======
-    projectile
-    pulseaudio-control
-    elpy
-    flycheck
-    ox-twbs
-    gnuplot
-    rainbow-delimiters
-    aggressive-indent
-		org-bullets
-		company
-		yasnippet
-		hide-mode-line
-		outshine
-		which-key
-		avy
-		helm
-		olivetti
-		magit
-		evil
-		org
-		undo-tree
-		evil-surround
-		spacemacs-theme
-		vertico
-		orderless
-		ivy
-		counsel
-		swiper
-		ivy-rich
-		hydra
-		su
-		envrc
->>>>>>> origin/master
   ];
 }
 
