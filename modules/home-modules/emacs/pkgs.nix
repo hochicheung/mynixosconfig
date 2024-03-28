@@ -1,7 +1,7 @@
 { pkgs, ...}:
 
 # To update, update-nix-fetchgit pkgs.nix
-# Some reason tabs won't work, replace all tabs with spaces
+# For some reason tabs won't work, replace all tabs with spaces
 {
   home.packages = with pkgs; [
     (emacsPackages.trivialBuild {
@@ -16,6 +16,17 @@
       };
 
       packageRequires = with emacsPackages; [ s dash ];
+    })
+    (emacsPackages.trivialBuild {
+      pname = "rainbow-delimiters";
+      version = "unstable-2023-08-30";
+
+      src = fetchFromGitHub {
+        owner = "Fanael";
+        repo = "rainbow-delimiters";
+        sha256 = "10ky6b7vy1w7iyn7qsqd1gswy8gdjc69zs0s71nr7swb9xdm3hr5";
+        rev = "f40ece58df8b2f0fb6c8576b527755a552a5e763";
+      };
     })
   ];
 }

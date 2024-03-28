@@ -24,27 +24,51 @@ in
   home.packages = with new-pkgs; with new-pkgs.emacsPackages; [
     #emacsPackage
 
-    deft
-    vterm
+    evil
+    undo-tree
+    evil-surround
+    spacemacs-theme
+    vertico
+    orderless
+    ivy
+    counsel
+    swiper
+    ivy-rich
+    hydra
+    su
+    envrc
+    magit
+    olivetti
+    helm
+    avy
+    which-key
+    outshine
+    hide-mode-line
+    yasnippet
+    company
+    org-bullets
+    #org-bars
+    aggressive-indent
     pdf-tools
-    anki-editor
-    org-roam-ui
-    org-noter
-    helm-bibtex
-    org-roam-bibtex
-    org-ref
-    ebib
-    org-roam
+    #rainbow-delimeters
+    gnuplot
+    ox-twbs
+    flycheck
+    elpy
+    pulseaudio-control
+    vterm
+    projectile
     emacsql
     emacsql-sqlite
-    projectile
-    pulseaudio-control
-    elpy
-    flycheck
-    ox-twbs
-    gnuplot
-    rainbow-delimiters
-    aggressive-indent
+    org-roam
+    org-roam-bibtex
+    ebib
+    org-ref
+    helm-bibtex
+    org-noter
+    org-roam-ui
+    deft
+    anki-editor
   ];
 }
 
