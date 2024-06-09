@@ -5,6 +5,7 @@
 !configuration.nix
 !home.nix
 !flake.nix
+!flake.lock
 
 # include only some files in subdirectory
 !/device

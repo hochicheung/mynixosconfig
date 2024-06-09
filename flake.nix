@@ -32,6 +32,7 @@
 			# arguments to home.nix
 		 }
 		];
-	};
+	 };
+  };
  };
 }
