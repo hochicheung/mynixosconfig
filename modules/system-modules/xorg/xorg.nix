@@ -10,9 +10,9 @@
 
 	services.xserver = {
 	  enable = true;
-    layout = "us";
-    xkbVariant = "altgr-intl";
-    xkbOptions = "caps:escape";
+    xkb.layout = "us";
+    xkb.variant = "altgr-intl";
+    xkb.options = "caps:escape";
 
 		# Allow exwm to work
     displayManager.sessionCommands =
