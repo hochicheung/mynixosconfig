@@ -2,7 +2,7 @@
 
 
 {
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 	imports = [
 		./hardware-configuration.nix
 
@@ -53,9 +53,9 @@
 	services.emacs.defaultEditor = true;
 
 	environment.systemPackages = with pkgs; [
-	  htop
-
 		git
+
+	  htop
 
 		networkmanager
 		# networkmanagerapplet
@@ -65,6 +65,8 @@
 		chromium
 
 		killall
+
+		vim
 	];
 }
 
