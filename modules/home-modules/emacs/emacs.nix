@@ -6,7 +6,7 @@ let
       name = "nixpkgs-emacs";
       url = "https://github.com/nixos/nixpkgs/";
       ref = "refs/heads/nixpkgs-unstable";
-      rev = "ec750fd01963ab6b20ee1f0cb488754e8036d89d"; # refs/heads/nixpkgs-unstable
+      rev = "e2dd4e18cc1c7314e24154331bae07df76eb582f"; # refs/heads/nixpkgs-unstable
     })
       {
         overlays = [
