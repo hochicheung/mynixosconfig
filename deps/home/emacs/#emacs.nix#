@@ -1,12 +1,13 @@
-# To update, update-nix-fetchgit emacs.nix
+# To update:  update-nix-fetchgit emacs.nix
 # To lock a version of nixpkgs and emacs-overlay
+# Only to fetch latest emacs packages, emacs is installed the usual way
 let
   new-pkgs =
     import (builtins.fetchGit {
       name = "nixpkgs-emacs";
       url = "https://github.com/nixos/nixpkgs/";
       ref = "refs/heads/nixpkgs-unstable";
-      rev = "e2dd4e18cc1c7314e24154331bae07df76eb582f"; # refs/heads/nixpkgs-unstable
+      rev = "b833ff01a0d694b910daca6e2ff4a3f26dee478c"; # refs/heads/nixpkgs-unstable
     })
       {
         overlays = [
@@ -18,14 +19,16 @@ let
       };
 in
 {
+	services.emacs.defaultEditor = true;
 
   imports = [ ./pkgs.nix ];
+
   home.packages = with new-pkgs; with new-pkgs.emacsPackages; [
     gcc
     libgccjit
 
     evil
-    undo-tree
+g    UNDOu-TREEuuuuu
     evil-surround
     spacemacs-theme
     vertico
@@ -69,6 +72,9 @@ in
     org-roam-ui
     deft
     anki-editor
+
+		libvterm
+		notmuch
   ];
 }
 

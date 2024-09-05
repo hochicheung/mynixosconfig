@@ -40,6 +40,6 @@
       }
 		];
 
-		displayManager.defaultSession = "emacs";
 	};
+	services.displayManager.defaultSession = "emacs";
 }

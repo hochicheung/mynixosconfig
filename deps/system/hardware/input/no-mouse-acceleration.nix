@@ -1,5 +1,5 @@
 {
-  services.xserver.libinput = {
+  services.libinput = {
 		touchpad = {
 		  accelProfile = "flat";
 			accelSpeed = "1";

@@ -1,27 +1,26 @@
 {pkgs, stdenv, callPackage, ...}:
 
-
 {
-  system.stateVersion = "24.05";
+  system.stateVersion = "23.11";
 	imports = [
-		./hardware-configuration.nix
-
-	  ./device/device.nix
-		#./modules/system-modules/network/dns.nix
+	  ./private-nixos-config/user/laptop-tp250/system.nix
 	];
 
 	nix = {
 		settings = {
-		# Don't garbage collect nix-shell
-		# extraOptions = ''
-		# keep-outputs = true
-		# keep-derivations = true
-		# '';
-	
-		# Ability to use custom channels in home-manager
-  	trusted-users = [ "root" "samcheung" ];
+		  # Don't garbage collect nix-shell
+		  # extraOptions = ''
+		  # keep-outputs = true
+		  # keep-derivations = true
+		  # '';
 
-    experimental-features = [ "nix-command" "flakes" ];
+  		max-jobs = 1;
+  		cores = 1;
+
+			# Ability to use custom channels in home-manager
+  		trusted-users = [ "root" "samcheung" ];
+
+      experimental-features = [ "nix-command" "flakes" ];
 		};
 	};
 
@@ -42,31 +41,9 @@
     memoryPercent = 50;
   };
 
-  nix.settings.max-jobs = 1;
-  nix.settings.cores = 1;
-
 	# i18n.defaultLocale = "en_US.UTF-8";
 	# i18n.extraLocaleSettings = { "TIME_STYLE" = "iso"; };
 
 	time.timeZone = "Europe/Stockholm";
-
-	services.emacs.defaultEditor = true;
-
-	environment.systemPackages = with pkgs; [
-		git
-
-	  htop
-
-		networkmanager
-		# networkmanagerapplet
-
-		wget
-
-		chromium
-
-		killall
-
-		vim
-	];
 }
 
