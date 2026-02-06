@@ -7,5 +7,5 @@
 	  ../../../private-nixos-config/system/network/wireless/wireless-networks.nix
 	];
 
-	networking.wireless.environmentFile = "/etc/nixos/private-nixos-config/system/network/wireless/wireless.env";
+	networking.wireless.secretsFile = "/etc/nixos/private-nixos-config/system/network/wireless/wireless.conf";
 }

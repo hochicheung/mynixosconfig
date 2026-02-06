@@ -7,7 +7,7 @@ let
       name = "nixpkgs-emacs";
       url = "https://github.com/nixos/nixpkgs/";
       ref = "refs/heads/nixpkgs-unstable";
-      rev = "9bb1e7571aadf31ddb4af77fc64b2d59580f9a39"; # refs/heads/nixpkgs-unstable
+      rev = "f720de59066162ee879adcc8c79e15c51fe6bfb4"; # refs/heads/nixpkgs-unstable
     })
       {
         overlays = [
@@ -50,7 +50,7 @@ in
     yasnippet
     company
     org-bullets
-    #org-bars
+    # org-bars
     aggressive-indent
     pdf-tools
     #rainbow-delimeters
@@ -61,8 +61,8 @@ in
     pulseaudio-control
     vterm
     projectile
-    emacsql
-    emacsql-sqlite
+    #emacsql
+    #emacsql-sqlite
     org-roam
     org-roam-bibtex
     ebib
@@ -72,6 +72,7 @@ in
     org-roam-ui
     deft
     anki-editor
+		# exwm-randr
 
 		libvterm
 		notmuch

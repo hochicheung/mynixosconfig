@@ -5,17 +5,16 @@
 	];
 
   # Ignore closing lid event
-  services.logind.lidSwitch = "ignore";
-  services.logind.lidSwitchDocked = "ignore";
-  
-  services.logind.extraConfig = ''
-    HandlePowerKey=suspend
-		HandlePowerKeyLongPress=poweroff
+  services.logind.settings.Login = {
+    	HandleLidSwitchDocked = "ignore";
+    	HandleLidSwitch = "ignore";
+    	HandlePowerKey="suspend";
+	HandlePowerKeyLongPress="poweroff";
 
-		# When idle, suspend
-    IdleAction=suspend
-    IdleActionSec=60
-  '';
+	# When idle, suspend
+    	IdleAction = "suspend";
+    	IdleActionSec = 60;
+  };
 
 	programs.xss-lock = {
 	  enable = true;
