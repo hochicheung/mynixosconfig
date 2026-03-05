@@ -15,7 +15,7 @@
   };
   # outputs = { self, nixpkgs, home-manager, my-secrets, ...}: {
 
-  outputs = @inputs{ self, nixpkgs, home-manager, ...}: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ...}: {
     nixosConfigurations = {
       # PWNI TP250
 	    pwni = nixpkgs.lib.nixosSystem {
