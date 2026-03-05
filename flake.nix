@@ -17,50 +17,50 @@
 
   outputs = inputs@{ self, nixpkgs, home-manager, ...}: {
     nixosConfigurations = {
-      # PWNI TP250
+      	    # PWNI TP250
 	    pwni = nixpkgs.lib.nixosSystem {
 	      system = "x86_64-linux";
 	      modules = [
-          /etc/nixos/private-nixos-config/user/pwni/system.nix
+          	/etc/nixos/private-nixos-config/user/pwni/system.nix
    
-		      #	make home-manager as a module of nixos
-		      # so that home-manager configuration will be deployed
-		      # automatically when executing `nixos-rebuild`
+	      	# make home-manager as a module of nixos
+		# so that home-manager configuration will be deployed
+		# automatically when executing `nixos-rebuild`
   
-          home-manager.nixosModules.home-manager
-		      {
-		        home-manager.useGlobalPkgs = true;
-			      home-manager.useUserPackages = true;
-            # home-manager.extraSpecialArgs = { inherit my-secrets; };
-			      # Optionally use home-manager.extraSpecialArgs to pass
-			      # arguments to home.nix
+		home-manager.nixosModules.home-manager
+		{
+		  home-manager.useGlobalPkgs = true;
+		  home-manager.useUserPackages = true;
+            	  # home-manager.extraSpecialArgs = { inherit my-secrets; };
+		  # Optionally use home-manager.extraSpecialArgs to pass
+		  # arguments to home.nix
 
-			      home-manager.users.samcheung = import ./private-nixos-config/user/pwni/home.nix;
-		      }
-		    ];
+	      	  home-manager.users.samcheung = import /etc/nixos/private-nixos-config/user/pwni/home.nix;
+		}
+	      ];
 	    };
-      # RMAN = MSI
+      	    # RMAN = MSI
 	    rman = nixpkgs.lib.nixosSystem {
 	      system = "x86_64-linux";
 	      modules = [
-          /etc/nixos/private-nixos-config/user/rman/system.nix
+          	/etc/nixos/private-nixos-config/user/rman/system.nix
            
-		      #	make home-manager as a module of nixos
-		      # so that home-manager configuration will be deployed
-		      # automatically when executing `nixos-rebuild`
+	        # make home-manager as a module of nixos
+	        # so that home-manager configuration will be deployed
+	        # automatically when executing `nixos-rebuild`
   
-          home-manager.nixosModules.home-manager
-		      {
-		        home-manager.useGlobalPkgs = true;
-			      home-manager.useUserPackages = true;
-            # home-manager.extraSpecialArgs = { inherit my-secrets; };
-			      # Optionally use home-manager.extraSpecialArgs to pass
-			      # arguments to home.nix
+          	home-manager.nixosModules.home-manager
+	        {
+	      	  home-manager.useGlobalPkgs = true;
+		  home-manager.useUserPackages = true;
+            	  # home-manager.extraSpecialArgs = { inherit my-secrets; };
+		  # Optionally use home-manager.extraSpecialArgs to pass
+		  # arguments to home.nix
 
-			      home-manager.users.samcheung = import ./private-nixos-config/user/rman/home.nix;
-		      }
-		    ];
+		  home-manager.users.samcheung = import /etc/nixos/private-nixos-config/user/rman/home.nix;
+	        }
+	      ];
 	    };
-    };
+      };
   };
 }
