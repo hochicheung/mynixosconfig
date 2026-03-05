@@ -1,3 +1,4 @@
 [submodule "private-nixos-config"]
 	path = private-nixos-config
 	url = git@github.com:hochicheung/private-nixos-config
+  branch = rework
