@@ -7,7 +7,7 @@ let
       name = "nixpkgs-emacs";
       url = "https://github.com/nixos/nixpkgs/";
       ref = "refs/heads/nixpkgs-unstable";
-      rev = "f720de59066162ee879adcc8c79e15c51fe6bfb4"; # refs/heads/nixpkgs-unstable
+      rev = "608d0cadfed240589a7eea422407a547ad626a14"; # refs/heads/nixpkgs-unstable
     })
       {
         overlays = [
@@ -72,10 +72,10 @@ in
     org-roam-ui
     deft
     anki-editor
-		# exwm-randr
-
-		libvterm
-		notmuch
+    #exwm-randr
+    
+    libvterm
+    notmuch
   ];
 }
 
