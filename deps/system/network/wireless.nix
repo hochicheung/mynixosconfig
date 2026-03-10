@@ -3,9 +3,7 @@
 	networking.wireless.userControlled.enable = true;
 	networking.dhcpcd.enable = true;
 
-	imports = [
-	  ../../../private-nixos-config/system/network/wireless/wireless-networks.nix
-	];
-
-	networking.wireless.secretsFile = "/etc/nixos/private-nixos-config/system/network/wireless/wireless.conf";
+  imports = [
+	  /etc/nixos/private-nixos-config/system/network/wireless/wireless-networks.nix
+  ];
 }
